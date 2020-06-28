@@ -2,7 +2,7 @@ package br.com.quicksort.util;
 
 public class ArrayUtil {
 	
-	public static int[] makeUnsorted(int n) {
+	public static int[] build(int n) {
 		int[] array =  new int[n];
 		
 		int i = n-1;

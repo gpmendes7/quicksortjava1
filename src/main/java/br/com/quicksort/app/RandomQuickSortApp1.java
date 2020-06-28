@@ -1,17 +1,16 @@
 package br.com.quicksort.app;
 
-import br.com.quicksort.algorithm.QuickSort;
+import br.com.quicksort.algorithm.RandomQuickSort;
 import br.com.quicksort.util.ArrayUtil;
 
-public class QuickSortApp2 {
+public class RandomQuickSortApp1 {
 	
    private static int[] array;
 	
 	public static void sortArray(int n) {
-		array = ArrayUtil.makeUnsorted(n);
-		
-		QuickSort quickSort = new QuickSort(array);
-		quickSort.sort(0, array.length-1);
+		array = ArrayUtil.build(n);	
+		RandomQuickSort rqs = new RandomQuickSort(array);
+		rqs.sort(0, array.length-1);
 	}
 	
 	public static void main(String[] args) {
