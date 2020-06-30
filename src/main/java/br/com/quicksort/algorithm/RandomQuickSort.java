@@ -2,7 +2,7 @@ package br.com.quicksort.algorithm;
 
 import java.util.Random;
 
-public class RandomQuickSort extends QuickSort {
+public class RandomQuickSort {
 
 	private static void swap(int[] array, int i, int j) {
 		int temp = array[i];
